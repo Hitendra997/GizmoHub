@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GizmoMax</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Title -->
+        <div class="flex-shrink-0">
+          <a href="#home" class="text-white text-3xl font-medium">GizmoHub</a>
+        </div>
+        <!-- Title End -->
+
+        <!-- Menu Item -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="#home"
+            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="#product"
+            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Product</a
+          >
+          <a
+            href="#reviews"
+            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Review</a
+          >
+          <a
+            href="#contact"
+            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Contact</a
+          >
+        </div>
+        <!-- Menu Item End -->
+        <!-- Login and Register -->
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center space-x-4 md:ml-6">
+            <button
+              class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-6 border border-gray-600 rounded-lg"
+            >
+              Login
+            </button>
+            <button
+              class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-6 border border-gray-600 rounded-lg"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+        <!-- Login and Register End -->
+
+        <!-- Toggle logo -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Toggle logo end -->
+      </div>
+      <!-- Toggle Item -->
+      <div id="menu" class="hidden md:hidden flex flex-col space-y-4 mt-4">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">About</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+      <!-- Toggle logo End-->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Experience the Power of GizmoMax -->
+    <section
+      class="flex flex-col md:flex-row items-center justify-between py-20 px-6 md:px-20 bg-gray-100"
+      id="home"
+    >
+      <!-- Text Content -->
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Experience the Power of GizmoMax
+        </h1>
+        <p class="text-gray-700 mb-6">
+          Introducing GizmoMax by GizmoHub, the latest innovation in technology.
+          With its cutting-edge features and sleek design, GizmoMax is set to
+          revolutionize the way you interact with gadgets.
+        </p>
+        <br />
+        <a
+          href="#product"
+          class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-3 px-6 border border-gray-600 rounded-full"
+        >
+          Learn More
+        </a>
+      </div>
+      <!-- Image -->
+      <div class="md:w-1/2 mt-8 md:mt-0 py-10">
+        <img
+          src="./images/home.jpg"
+          alt="GizmoMax"
+          class="rounded-lg shadow-lg w-full"
+        />
+      </div>
+    </section>
+    <!-- Experience the Power of GizmoMax END -->
+
+    <section id="product" class="py-16 px-4 text-center bg-gray-100">
+      <h2 class="text-3xl font-bold mb-4">Introducing GizmoMax</h2>
+      <p class="mb-8">
+        The pinnacle of modern technology, blending elegant design, robust
+        features, and unparalleled performance for your daily demands.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="./images/img1.jpg"
+            alt="GizmoMax"
+            class="mx-auto mb-4 w-full h-64 object-cover"
+          />
+          <p class="text-xl font-bold mb-4">$499</p>
+          <button class="px-6 py-3 bg-blue-600 text-white rounded-full">
+            Buy Now
+          </button>
+        </div>
+        <div class="card bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="./images/img2.jpg"
+            alt="GizmoMax"
+            class="mx-auto mb-4 w-full h-64 object-cover"
+          />
+          <p class="text-xl font-bold mb-4">$299</p>
+          <button class="px-6 py-3 bg-blue-600 text-white rounded-full">
+            Buy Now
+          </button>
+        </div>
+        <div class="card bg-white p-4 rounded-lg shadow-md">
+          <img
+            src="./images/img3.jpg"
+            alt="GizmoMax"
+            class="mx-auto mb-4 w-full h-64 object-cover"
+          />
+          <p class="text-xl font-bold mb-4">$399</p>
+          <button class="px-6 py-3 bg-blue-600 text-white rounded-full">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <section id="reviews" class="bg-gray-100 py-16 px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Customer Reviews</h2>
+      <div class="space-y-8">
+        <div class="bg-grey-100 p-6 rounded shadow-md">
+          <p>
+            "The GizmoMax exceeded all my expectations. It's versatile,
+            reliable, and easy to use."
+          </p>
+          <p class="mt-2 font-bold">- Aasma Subba</p>
+        </div>
+        <div class="bg-grey-100 p-6 rounded shadow-md">
+          <p>
+            "This gadget is a game changer! GizmoMax is now an essential part of
+            my routine."
+          </p>
+          <p class="mt-2 font-bold">- Bibek Magar</p>
+        </div>
+      </div>
+    </section>
+    <!-- Review end-->
+
+    <!-- Contact us  -->
+    <section id="contact" class="bg-white-200 py-16 px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+      <form class="max-w-md mx-auto space-y-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          class="w-full p-2 border rounded"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          class="w-full p-2 border rounded"
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          class="w-full p-2 border rounded"
+        ></textarea>
+        <button
+          type="submit"
+          class="px-6 py-3 bg-gray-900 hover:bg-gray-700 text-white font-bold py-3 px-6 border border-gray-600 rounded-full"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+    <!-- Contact us end -->
+
+    <!-- FOOTER  -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+      <div class="mb-2">Follow Us</div>
+      <div class="flex justify-center space-x-4 mb-4">
+        <a
+          href="https://www.facebook.com/profile.php?id=61552741977257"
+          class="hover:text-gray-400"
+          >Facebook</a
+        >
+        <a href="#" class="hover:text-gray-400">Twitter</a>
+        <a
+          href="https://www.instagram.com/bibek__23/"
+          class="hover:text-gray-400"
+          >Instagram</a
+        >
+      </div>
+      <div>&copy; 2024 GizmoHub. All rights reserved.</div>
+    </footer>
+
+    <!-- Sript -->
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const menu = document.getElementById("menu");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <!-- Script end -->
+  </body>
+</html>
